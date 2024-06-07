@@ -49,11 +49,7 @@ For SMS and push notifications, you need to implement the respective logic in th
     git clone https://github.com/AmirhoseinMasoumi/notification-service.git
     cd notification-service
     ```
-2. Set up environment variables by creating a .env file:
-    ```sh
-    cp .env.example .env
-    ```
-    Edit the .env file with your configuration settings.
+2. Edit the .env file with your configuration settings.
 
 3. Build and run the application:
     ```sh
