@@ -1,13 +1,12 @@
 # Notification Service
 
-This is a simple notification service project that allows you to send notifications via email, HTML email, SMS, and push notifications.
+This is a simple notification service written in Go (Golang) that allows you to send notifications via email, HTML email, SMS, and push notifications. It provides an HTTP API endpoint for receiving notification requests and queues them for processing.
 
 ## Features
 
-- Send notifications via email
-- Send notifications via HTML email
-- Send notifications via SMS
-- Send notifications via push notifications (iOS, Android, Web)
+- Supports multiple notification channels: email, HTML email, SMS, and push notifications.
+- Configurable retry mechanism for failed notifications.
+- Asynchronous processing using a job queue.
 
 ## Usage
 
@@ -40,6 +39,10 @@ The configuration of the notification service can be adjusted using environment 
 - **JOB_QUEUE_SIZE**: Size of the job queue.
 - **JOB_WORKER_COUNT**: Number of worker threads for processing jobs.
 - **SERVER_ADDRESS**: Address and port on which the server should listen.
+
+### Usage Notes
+For SMS and push notifications, you need to implement the respective logic in the channels/SMS.go and channels/Push.go files. Replace the placeholder implementation with the actual logic for sending SMS and push notifications.
+
 ## Installation
 1. Clone the repository:
     ```sh
