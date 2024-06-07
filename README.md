@@ -46,7 +46,7 @@ For SMS and push notifications, you need to implement the respective logic in th
 ## Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/notification-service.git
+    git https://github.com/AmirhoseinMasoumi/notification-service.git
     cd notification-service
     ```
 2. Set up environment variables by creating a .env file:
